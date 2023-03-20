@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="javascript/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="styles/images/logo.png">
+                <h1>DISCOVER DUPAX</h1>
+            </a>
+        </div>
+        
+        <div class="header-links">
+            <div class="link-container">
+                <p>ABOUT DUPAX</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='aboutdupax.html'">DUPAX DEL NORTE</a>
+                    <a class="btn" onclick="location.href='dds.html'">DUPAX DEL SUR</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>WHERE TO GO</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='wheretogo.html'">NATURE AND ADVENTURE</a>
+                    <a class="btn" onclick="location.href='Foods.html'">FOOD AND HOSPITALITY</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>EVENTS AND CULTURES</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='eventnculture.html'">FESTIVAL</a>
+                    <a class="btn" onclick="location.href='Musics.html'">MUSIC</a>
+                    <a class="btn" onclick="location.href='Products.html'">PRODUCT</a>
+                </div>
+            </div>
+            <div class="link-container"  onclick="location.href='reminders.html'">
+                <p>REMINDERS</p>
+            </div>
+        </div>
+    </header>
+    <div class="places-container">
+        <div class="hotel-container">
+            <div class="hotel-contacts">
+                <h2>HOTEL BOOKING</h2>
+                <a href="https://www.facebook.com/Adducul-Hotel-201057680618618"><img src="styles/images/Icons/fblogo.png"></a>
+                <a href="https://goo.gl/maps/eSjFoTmp1hjwApnG9"><img src="styles/images/Icons/mapslogo.png"></a>
+                <h3>+63 927 865 1461</h3>
+            </div>
+            <div class="main-image">
+                <img src="styles/images/Adducul Hotel/Adducul1.jpg" class="imgs">
+                <img src="styles/images/Adducul Hotel/Adducul2.jpg" class="imgs">
+                <img src="styles/images/Adducul Hotel/Adducul3.jpg" class="imgs" >
+                <img src="styles/images/Adducul Hotel/Adducul4.jpg" class="imgs">
+            </div>
+            <h3 style="text-align: center;font-size: 0.8em; padding: 1em;">Located in Barangay Dopaj, Dupax del Sur, here's an affordable drive-in hotel open for tourists and locals!  They also have a function hall available for any occasion. Come, stay and enjoy your day!
+            </h3>
+            <div class="image-option">
+                <a href="javascript:prevImages('slide')"><img src="styles/images/Icons/prvsremndrbtn.png"></a>
+                <div class="slide-images">
+                    <img src="styles/images/Adducul Hotel/Adducul1.jpg" class="slide" onClick="javascript:showImg(0 , 'imgs')">
+                    <img src="styles/images/Adducul Hotel/Adducul2.jpg" class="slide" onClick="javascript:showImg(1 , 'imgs')">
+                    <img src="styles/images/Adducul Hotel/Adducul3.jpg" class="slide" onClick="javascript:showImg(2 , 'imgs')">
+                    <img src="styles/images/Adducul Hotel/Adducul4.jpg" class="slide" onClick="javascript:showImg(3 , 'imgs')">
+                </div>
+                <a href="javascript:nextImages('slide')"><img src="styles/images/Icons/nxtrmndrbtn.png"></a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">TERMS AND PRIVACY POLICY</a>
+        </div>
+        <h4>© 2022 DISCOVER DUPAX. ALL RIGHTS RESERVED</h4>
+    </footer>
+
+    <script>
+        showCurrentImages('slide');
+        showImg(0 , 'imgs');
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="javascript/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="styles/images/logo.png">
+                <h1>DISCOVER DUPAX</h1>
+            </a>
+        </div>
+        
+        <div class="header-links">
+            <div class="link-container">
+                <p>ABOUT DUPAX</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='aboutdupax.html'">DUPAX DEL NORTE</a>
+                    <a class="btn" onclick="location.href='dds.html'">DUPAX DEL SUR</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>WHERE TO GO</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='wheretogo.html'">NATURE AND ADVENTURE</a>
+                    <a class="btn" onclick="location.href='Foods.html'">FOOD AND HOSPITALITY</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>EVENTS AND CULTURES</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='eventnculture.html'">FESTIVAL</a>
+                    <a class="btn" onclick="location.href='Musics.html'">MUSIC</a>
+                    <a class="btn" onclick="location.href='Products.html'">PRODUCT</a>
+                </div>
+            </div>
+            <div class="link-container"  onclick="location.href='reminders.html'">
+                <p>REMINDERS</p>
+            </div>
+        </div>
+    </header>
+    <div class="places-container">
+        <div class="hotel-container">
+            <div class="hotel-contacts">
+                <h2>HOTEL BOOKING</h2>
+                <a href="https://www.facebook.com/casadeespanolahrr"><img src="styles/images/Icons/fblogo.png"></a>
+                <a href="mailto:casadeespanola@gmail.com">
+                    <img src="styles/images/Icons/gmaillogo.png"></a>
+                <a href="https://goo.gl/maps/MtyvzhSA8iUiZUry8"><img src="styles/images/Icons/mapslogo.png"></a>
+                <h3>+63 915 131 7525</h3>
+            </div>
+            <div class="main-image">
+                <img src="styles/images/Casa Espanola/Casa1.jpg" class="imgs">
+                <img src="styles/images/Casa Espanola/Casa2.jpg" class="imgs">
+                <img src="styles/images/Casa Espanola/Casa3.jpg" class="imgs">
+            </div>
+            <h3 style="text-align: center;font-size: 0.8em; padding: 1em;">Are you dreaming of a place to stay? They are here! Visit Casa de Española in Tucanon Aritao. They live for vacationers and travelers who love a good deal, fun, and adventure. 
+            </h3>
+            <div class="image-option">
+                <a href="javascript:prevImages('slide')"><img src="styles/images/Icons/prvsremndrbtn.png"></a>
+                <div class="slide-images">
+                    <img src="styles/images/Casa Espanola/Casa1.jpg" class="slide" onClick="javascript:showImg(0 , 'imgs')">
+                    <img src="styles/images/Casa Espanola/Casa2.jpg" class="slide" onClick="javascript:showImg(1 , 'imgs')">
+                    <img src="styles/images/Casa Espanola/Casa3.jpg" class="slide" onClick="javascript:showImg(2 , 'imgs')">
+                    <img src="styles/images/Casa Espanola/Casa4.jpg" class="slide" onClick="javascript:showImg(3 , 'imgs')">
+                </div>
+                
+                <a href="javascript:nextImages('slide')"><img src="styles/images/Icons/nxtrmndrbtn.png"></a>
+            </div>
+
+            <div class="booking-links">
+                <a href="https://www.tripadvisor.com.ph/Hotel_Review-g9803544-d17551817-Reviews-Casa_De_Espanola-Aritao_Nueva_Vizcaya_Province_Cagayan_Valley_Region_Luzon.html">
+                    <img src="styles/images/Icons/tripadvisorlogo.png"></a>
+                <a href="https://www.readytotrip.com/hotels/Philippines/Luzon/Aritao/casa-de-espanola/">
+                    <img src="styles/images/Icons/readytotriplogo.png"></a>
+                <a href="https://www.directhotels.com/Aritao/Casa_de_Espanola">
+                    <img src="styles/images/Icons/directhotelslogo.png"></a>
+                <a href="https://www.traveloka.com/en-ph/hotel/philippines/casa-de-espaola-9000000025207?id=16531956914503831916&adloc=en-ph&kw=16531956914503831916_&gmt=&gn=g&gd=c&gdm=&gcid=314381837178&gdp=&gdt=&gap=&pc=1&cp=16531956914503831916_HDSDOM-LOC-D-s_16531956914503831916_PH&aid=23108330330&wid=dsa-969486113512&fid=&gid=20839&kid=_k_Cj0KCQjw0PWRBhDKARIsAPKHFGhKad0kU1qiylZq7AZRbBiaPQcD60wvhTEX5RODcd4VRjDy91hhubIaAjHLEALw_wcB_k_&utm_id=ViSdWmxD&ad_id=314381837178&target_id=dsa-969486113512&click_id=Cj0KCQjw0PWRBhDKARIsAPKHFGhKad0kU1qiylZq7AZRbBiaPQcD60wvhTEX5RODcd4VRjDy91hhubIaAjHLEALw_wcB&group_id=23108330330&gclid=Cj0KCQjw0PWRBhDKARIsAPKHFGhKad0kU1qiylZq7AZRbBiaPQcD60wvhTEX5RODcd4VRjDy91hhubIaAjHLEALw_wcB">
+                    <img src="styles/images/Icons/travelokalogo.png"></a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">TERMS AND PRIVACY POLICY</a>
+        </div>
+        <h4>© 2022 DISCOVER DUPAX. ALL RIGHTS RESERVED</h4>
+    </footer>
+
+    <script>
+        showCurrentImages('slide');
+        showImg(0 , 'imgs');
+    </script>
+</body>
+</html>

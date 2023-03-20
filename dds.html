@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="javascript/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="styles/images/logo.png">
+                <h1>DISCOVER DUPAX</h1>
+            </a>
+        </div>
+        
+        <div class="header-links">
+            <div class="link-container">
+                <p>ABOUT DUPAX</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='aboutdupax.html'">DUPAX DEL NORTE</a>
+                    <a class="btn" onclick="location.href='dds.html'">DUPAX DEL SUR</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>WHERE TO GO</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='wheretogo.html'">NATURE AND ADVENTURE</a>
+                    <a class="btn" onclick="location.href='Foods.html'">FOOD AND HOSPITALITY</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>EVENTS AND CULTURES</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='eventnculture.html'">FESTIVAL</a>
+                    <a class="btn" onclick="location.href='Musics.html'">MUSIC</a>
+                    <a class="btn" onclick="location.href='Products.html'">PRODUCT</a>
+                </div>
+            </div>
+            <div class="link-container"  onclick="location.href='reminders.html'">
+                <p>REMINDERS</p>
+            </div>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="mobile-menu">
+                <a class="btn" onclick="location.href='aboutdupax.html'">ABOUT DUPAX</a>
+                <a class="btn" onclick="location.href='wheretogo.html'">WHERE TO GO</a>
+                <a class="btn" onclick="location.href='eventnculture.html'">EVENTS AND CULTURES</a>
+                <a class="btn" onclick="location.href='reminders.html'">REMINDERS</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="dd-container">
+        <div class="l-banner"></div>
+        <div class="dd-details">
+            <div class="places-container">
+                <div class="dropdown-content">
+                    <button class="btn1" onclick="location.href='aboutdupax.html'" >DUPAX DEL NORTE</a>
+                    <button class="btn1 act" onclick="location.href='dds.html'">DUPAX DEL SUR</a>
+                </div>
+            <div class="video-container">
+                <video class="videoInsert" id="vid1" controls>
+                    <source src="videos/dds.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="dd-more-details">
+                <h2>“HERITAGE CAPITAL OF NUEVA VIZCAYA”</h2>
+                <p>Dupax del Sur, or the Municipality of Dupax del Sur, is a second-class municipality in the Philippines' Nueva Vizcaya province. It has a population of 21,224 people according to the 2020 census. The municipality covers 374.70 square kilometers (144.67 square miles), accounting for 7.78 percent of the entire area of Nueva Vizcaya. According to the 2020 Census, it has a population of 21,224 people. 
+                    This amounted to 4.27 percent of Nueva Vizcaya's total population, or 0.58 percent of the Cagayan Valley region's entire population. According to these numbers, the population density is 57 people per square kilometer, or 147 people per square mile.<br>
+                </p>
+                <div class="img1">
+                    <img src="styles/images/icons/ddspeeps.jpg">
+                    <img src="styles/images/Icons/ddsmap.png">
+                </div>
+                <h3>HISTORY</h3>
+                <p>Dupax got its name from the Isinay word "DOPAJ," which means "to lie down in perfect relaxation and rest," which is exactly what the locals intended to do after a long day of hunting in the nearby forest before heading back to their homes in the nearby communities. Luis Perez Dasmarias was the first to locate the settlement in 1591. The Dominican Friars erected a mission at Dupax eighteen years later. The mission was eventually abandoned owing to territorial issues between Franciscans and Dominicans.
+                    Dupax has proven to be too tough to colonize from 1632 until 1702. After that, in 1717, Fr. Alejandro Cacho arrived in Dupax on a mission and gradually founded Christian communities. Three tribes inhabited in the area around Dupax at the time: the Malaats from Ituy, the Caraos from Benguet, and the Bugcalots. The Malaats are thought to be the Isinays' forefathers. Dupax was created as an urban community by the Augustinian missionaries Father Nicolas Norbante and Agustin de San Juan in April of 1726. 
+                    Dupax del Sur, Dupax del Norte, and Alfonso Castaeda, the ancient town of Dupax, were separated into three municipalities from the beginning.</p><br>
+                <h3>BARANGAYS</h3>
+                <p>
+                    Abaca<br>
+                    Domang<br>
+                    Mangayang<br>
+                    Bagumbayan<br>
+                    Dopaj<br>
+                    Palabotan<br>
+                    Balzain<br>
+                    Gabut<br>
+                    Sanguit<br>
+                    Banila<br>
+                    Ganao<br>
+                    Santa Maria<br>
+                    Biruk<br>
+                    Kimbutan<br>
+                    Talbek<br>
+                    Canabay<br>
+                    Kinabuan<br>
+                    Carolotan<br>
+                    Lukidnon<br></p>
+            </div>
+        </div>
+    </div>
+        <div class="r-banner"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">TERMS AND PRIVACY POLICY</a>
+        </div>
+        <h4>© 2022 DISCOVER DUPAX. ALL RIGHTS RESERVED</h4>
+    </footer>
+    <script defer>
+        playPauseVideo();
+    </script>
+</body>
+</html>

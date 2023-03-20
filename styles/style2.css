@@ -1,0 +1,829 @@
+body,h1,h2,h3,h4,button{
+    margin: 0;
+    padding: 0;
+
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-weight: bolder;
+    color: white;
+}
+
+body{  
+    background-color: gray;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    background-color: rgb(43, 37, 37);
+}
+
+.logo a{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img{
+    max-width: 5.5rem;
+}
+
+.logo h1{
+    font-size: 1.5em;
+    color: white;
+}
+
+.header-links{
+    display: flex;
+    min-width: 35vw;
+}
+
+.header-links a{
+    text-decoration: none;
+    color: white;
+
+}
+.header-links a:hover{
+    background-color: rgb(133, 131, 131);
+    flex-direction: column;
+}
+.sub-menu{
+    display: none;
+}
+.btn {
+    display: flex;
+    border-style: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    flex-grow: 1;
+    font-size: 0.7em;
+    align-items: center;
+    justify-content: center;
+    min-height: 5.1rem;
+
+    background-color: rgb(43, 37, 37);
+    cursor: pointer;
+}
+
+.active, .btn:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+    transition: 0.3s;
+} 
+.main-container{
+    background : url("images/MT. SanVicente/Mt.San4.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    min-height: 100vh;
+}
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+
+} 
+#hamburger-icon div{
+    width: 25px;
+    height: 2.5px;
+    background-color: aliceblue;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+  
+.open .bar2 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .bar4 {
+    opacity: 0;
+}
+  
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+    z-index: 10;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    right: 7.5rem;
+    font-size: 1rem;
+    top: 80px;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+  
+.mobile-menu a{
+    margin-bottom: none;
+    margin-right: 20px;
+    position: relative;
+    background-color: rgb(48, 47, 47);
+}
+.welcome-border{
+  border: 4px solid rgb(255, 255, 255);
+  padding: 0.5em;
+}
+
+.welcome-border2{
+    border: 4px solid rgb(255, 255, 255);
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.welcome-border2 h2,h1{
+    -webkit-text-fill-color: white;
+    padding: 0.2em;
+}
+
+.dropdown-content{
+    display: flex;
+    flex-direction: row;
+    min-width: 50vw;
+    background-color: rgb(48, 47, 47);
+}
+.footer{
+    background-color: rgb(80, 76, 76);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    min-height: 4rem;
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 0.7em;
+    color: white;
+}
+
+.footer h4{
+    font-size: 0.7em;
+    padding-bottom: 1.2rem;
+    color: white;
+}
+
+.dd-container{
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.l-banner{
+    background-image: url("images/Icons/lefttextileimg.png");
+    background-size: contain;
+    min-width: 7.5rem;
+}
+
+.r-banner{
+    background-image: url("images/Icons/righttextileimg.png");
+    background-size: contain;
+    min-width: 7.5rem;
+}
+
+.dd-details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 50vw;
+    min-height: 100vh;
+}
+
+.video-container{
+    min-height: 30vh;
+}
+.videoInsert {
+    right: 0; 
+    bottom: 0;
+    max-width: 100%; 
+    max-height: 100%;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.dd-more-details{
+    min-height: 100vh;
+    background-color: rgb(48, 47, 47);
+}
+.dd-more-details h2{
+    color: white;
+    padding-left: 1em;
+
+    text-align: center;
+}
+
+.dd-more-details h3{
+    color: white;
+    padding-left: 1em;
+    text-align: justify;
+}
+
+.dd-more-details p{
+    font-size: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: lighter;
+
+    text-align: justify;
+    color: white;
+}
+
+.dd-more-details img{
+    background-size: cover;
+    max-width: 23rem;
+    max-height: 23rem;
+}
+
+.img1{
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 3em;
+}
+.places-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(133, 131, 131);
+}
+
+.places{
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 60vw;
+    min-height: 80vh;
+    background-color: rgb(48, 47, 47);
+
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.places img{
+    max-height: 40rem;
+}
+
+.place{
+    position: relative;
+    min-width: 18rem;
+    min-height: 18rem;
+    border-style: none;
+    
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+
+}
+
+.place h3{
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+
+
+
+.place-name{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+}
+
+.place-name img{
+    max-width: 1rem;
+    max-height: 1rem;    
+
+}
+.places-links{
+    display: flex;
+    width: 60vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+.places-links a>img{
+    max-height: 4rem;
+    max-width: 6rem;
+}
+.places-links h2{
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 1rem;
+
+}
+.location-vid{
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 60vw;
+    min-width: 60vw;
+}
+
+.location-vid h3{
+    font-size: 0.8em;
+    padding: 1em;
+    text-align: center;
+}
+.stay-container{
+    min-width: 100%;
+    min-height: 25rem;
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    flex-direction: column;
+}
+.stay-options{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    height: 3rem;
+
+    margin-left: 3.5rem;
+}
+.stay-options a{
+    display: flex;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 1;
+
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+    max-width: 25vw;
+    background-color: gray;
+    transition: all .5s ease-in-out;
+}
+.stay-options a:hover{
+    background-color: black;
+    color: white;
+}
+.stay-place{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: none;
+    flex-grow: 1;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.map-container{
+    display: flex;
+    flex-grow: 1;
+    max-height: 40vw;
+    margin-left: 6.5em;
+    margin-top: 2em;
+}
+
+.map-logo{
+    background-image: url("images/Icons/mapslogo.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+.map{
+    margin-bottom: 2rem;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+.whattodo-choices{
+    display: flex;
+    flex-direction: row;
+    gap: 0.1rem;
+
+    min-width: 60vw;
+    border-style: solid;
+    color: gray;
+
+}
+.btn1 {
+    display: flex;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 1;
+
+    align-items: center;
+    justify-content: center;
+    min-height: 3.5rem;
+    background-color: rgb(43, 37, 37);
+}
+.act, .btn1:hover {
+    color: rgb(207, 73, 73);
+    background-color: black;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.slide-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    max-height: 10rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+    gap: 1rem;
+}
+
+.slide-images img{
+    height: 15rem;
+    width: 16rem;
+
+    display: none;
+}
+
+.slide-images img:hover{
+    cursor: pointer;
+    box-shadow: 0 0.8rem 0.8rem 0 rgb(182, 176, 176);
+    transform: scale(1.10);
+    transition: 0.3s;
+
+}
+.slide-images1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    max-height: 10rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+    gap: 1rem;
+}
+
+.slide-images1 img{
+    height: 15rem;
+    width: 16rem;
+
+    display: none;
+}
+
+.main-image{
+    display: flex;
+    position: relative;
+
+    min-width: 48vw;
+    max-width: 48vw;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-image img{
+    max-height: 35rem;
+}
+
+.hotel-container{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 60vw;
+    background-color: rgb(48, 47, 47);
+
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.image-option{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.image-option a>img{
+    max-height: 2rem;
+    max-width: 2rem;
+}
+
+.imgs{
+    min-width: 100%;
+    max-height: 100%;
+
+    display: none;
+}
+.imgs1{
+    min-width: 100%;
+    max-height: 100%;
+
+    display: none;
+}
+
+.booking-links{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    gap: 3rem;
+}
+
+.booking-links img{
+    max-height: 5rem;
+    max-width: 5rem;
+}
+
+.hotel-contacts{
+    display: flex;
+    width: 60vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 2.5rem;
+}
+
+.hotel-contacts a>img{
+    max-height: 2rem;
+    max-width: 2rem;
+}
+
+.hotel-contacts h2{
+    flex-grow: 1;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.food-map{
+    min-width: 50%;
+    min-height: 30rem;
+
+    margin-bottom: 2rem;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.eventnculture-choices{
+    display: flex;
+    flex-direction: row;
+    gap: 0.1rem;
+
+    min-width: 60vw;
+    border-style: solid;
+    color: gray;
+}
+.reminders-container{
+    position: relative;
+    width: 60vw;
+    min-height: 20rem;
+
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.reminder{
+    width: 100%;
+    position: absolute;
+
+    top: 30%;
+    transform: translateY(-30%);
+}
+
+.reminder h2{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 2.3em;
+
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.reminder a:nth-of-type(1) img{
+    left: 1.25rem;
+}
+
+.reminder a:nth-of-type(2) img{
+    right: 1.25rem;
+}
+
+.reminder img{
+    position: absolute;
+    max-width: 4rem;
+    max-height: 4rem;
+
+    top: 0;
+}
+
+.reminder-dots{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 1.25rem;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    gap: 2rem;
+}
+
+.dot{
+    border-radius: 45rem;
+    min-width: 1.3rem;
+    min-height: 1.3rem;
+    background-color: white;
+}
+
+.dot:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+#dot-active{
+    background-color: gray;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .header-links {
+        display: none;
+    }
+}
+
+#hamburger-icon {
+    display: block;
+  }
+
+.map-container{
+    margin-left: 2em;
+    min-height: 80vw;
+    margin-right: 2em;
+
+}
+.stay-options{
+    margin-right: 3.5rem;
+}
+.stay-options a{
+    min-height: 3rem;
+    max-width: 50vw;
+
+}
+.dd-details{
+    max-width: 100vw;
+}
+.l-banner{
+    background-image: url("images/Icons/lefttextileimg.png");
+    background-size: contain;
+    min-width: 4rem;
+}
+
+.r-banner{
+    background-image: url("images/Icons/righttextileimg.png");
+    background-size: contain;
+    min-width: 4rem;
+}
+.dropdown-content{
+    min-width: 80vw;
+}
+.places{
+    max-width: 100vw;
+}
+.place{
+    min-width: 15rem;
+    min-height: 15rem;
+}
+.location-vid{
+    max-width: 100vw;
+    min-width: 100vw;
+}
+
+.location-vid h3{
+    font-size: 0.7em;
+    padding: 1em;
+}
+.whattodo-choices{
+    min-width: 100vw;
+}
+.eventnculture-choices{
+    min-width: 100vw;
+}
+.hotel-container{
+    max-width: 100vw;
+}
+.hotel-contacts{
+    width: 100vw;
+}
+.hotel-contacts a>img{
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+}
+.main-image{
+    min-width: 80vw;
+    max-width: 80vw;
+    position: static;
+}
+.slide-images{
+    gap: 0.5rem;
+}
+.slide-images img{
+    height: 8rem;
+    width: 9rem;
+}
+.image-option a>img{
+    max-height: 2rem;
+    max-width: 2rem;
+}
+.reminders-container{
+    width: 100vw;
+    min-height: 15rem;
+}
+.btn{
+    display: flex;
+    border-style: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    align-items: center;
+    justify-content: center;
+    min-height: 5.1rem;
+    min-width: 18rem;
+    
+    background-color: rgb(43, 37, 37);
+    cursor: pointer;
+}
+.active, .btn:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+}

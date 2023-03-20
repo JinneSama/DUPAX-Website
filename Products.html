@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="javascript/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="styles/images/logo.png">
+                <h1>DISCOVER DUPAX</h1>
+            </a>
+        </div>
+        
+        <div class="header-links">
+            <div class="link-container">
+                <p>ABOUT DUPAX</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='aboutdupax.html'">DUPAX DEL NORTE</a>
+                    <a class="btn" onclick="location.href='dds.html'">DUPAX DEL SUR</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>WHERE TO GO</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='wheretogo.html'">NATURE AND ADVENTURE</a>
+                    <a class="btn" onclick="location.href='Foods.html'">FOOD AND HOSPITALITY</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>EVENTS AND CULTURES</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='eventnculture.html'">FESTIVAL</a>
+                    <a class="btn" onclick="location.href='Musics.html'">MUSIC</a>
+                    <a class="btn" onclick="location.href='Products.html'">PRODUCT</a>
+                </div>
+            </div>
+            <div class="link-container"  onclick="location.href='reminders.html'">
+                <p>REMINDERS</p>
+            </div>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="mobile-menu">
+                <a class="btn" onclick="location.href='aboutdupax.html'">ABOUT DUPAX</a>
+                <a class="btn" onclick="location.href='wheretogo.html'">WHERE TO GO</a>
+                <a class="btn" onclick="location.href='eventnculture.html'">EVENTS AND CULTURES</a>
+                <a class="btn" onclick="location.href='reminders.html'">REMINDERS</a>
+            </div>
+        </div>
+    </header>
+    <div class="places-container">  
+        <div class="eventnculture-choices">       
+            <button class="btn1" onclick="location.href='eventnculture.html'">FESTIVAL</button>
+            <button class="btn1" onclick="location.href='Musics.html'">MUSIC</button>
+            <button class="btn1 act" onclick="location.href='Products.html'">PRODUCT</button>
+        </div>  
+        <div class="hotel-container">
+            <div class="hotel-contacts">
+                <h2 style="min-width: 100%; font-size: larger; text-align: center;">ARUGA HANDWOVENS</h2>
+                <a href="https://www.facebook.com/ArugaHandwovens"><img src="styles/images/Icons/fblogo.png"></a>
+                <h3>+63 917 515 3408</h3>
+            </div>
+            <div class="main-image">
+                <img src="styles/images/Aruga Handwoven/Aruga1.jpg" class="imgs">
+                <img src="styles/images/Aruga Handwoven/Aruga2.jpg" class="imgs">
+                <img src="styles/images/Aruga Handwoven/Aruga3.jpg" class="imgs">
+                <img src="styles/images/Aruga Handwoven/Aruga4.jpg" class="imgs">
+                <img src="styles/images/Aruga Handwoven/Aruga5.jpg" class="imgs">
+            </div>
+            <h3 style="text-align: center;font-size: 0.8em; padding: 1em;">An Isinai masterpiece, Aruga Handwovens customize handwoven wrap, tops and many more passing through creativity! They develop interest, they work for passion. Visit them at Barangay Dopaj, Dupax del Sur.
+            </h3>
+            <div class="image-option">
+                <a href="javascript:prevImages('slide')"><img src="styles/images/Icons/prvsremndrbtn.png"></a>
+                <div class="slide-images">
+                    <img src="styles/images/Aruga Handwoven/Aruga1.jpg" class="slide" onClick="javascript:showImg(0 , 'imgs')">
+                    <img src="styles/images/Aruga Handwoven/Aruga2.jpg" class="slide" onClick="javascript:showImg(1 , 'imgs')">
+                    <img src="styles/images/Aruga Handwoven/Aruga3.jpg" class="slide" onClick="javascript:showImg(2 , 'imgs')">
+                    <img src="styles/images/Aruga Handwoven/Aruga4.jpg" class="slide" onClick="javascript:showImg(3 , 'imgs')">
+                    <img src="styles/images/Aruga Handwoven/Aruga5.jpg" class="slide" onClick="javascript:showImg(4 , 'imgs')">
+                </div>
+                
+                <a href="javascript:nextImages('slide')"><img src="styles/images/Icons/nxtrmndrbtn.png"></a>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d244968.82949870045!2d120.9897535462217!3d16.392394882588352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3390440fe0ec5919%3A0xa206716039d90d3d!2sNueva%20Vizcaya%20Provincial%20Capitol%2C%20Provincial%20Capitol%20Compound%2C%20Bayombong%2C%20Nueva%20Vizcaya!3m2!1d16.4879611!2d121.1597546!4m5!1s0x339058372db27d13%3A0x258d98e2fa89d04a!2sSt.%20Mary&#39;s%20School%20of%20Dupax%2C%20Dupax%20Del%20Sur%2C%20Nueva%20Vizcaya!3m2!1d16.291992!2d121.09678989999999!5e0!3m2!1sen!2sph!4v1648223196594!5m2!1sen!2sph" 
+                width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">TERMS AND PRIVACY POLICY</a>
+        </div>
+        <h4>© 2022 DISCOVER DUPAX. ALL RIGHTS RESERVED</h4>
+    </footer>
+
+    <script>
+        showCurrentImages('slide');
+        showImg(0 , 'imgs');
+    </script>
+</body>
+</html>

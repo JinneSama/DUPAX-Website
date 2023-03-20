@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="javascript/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="styles/images/logo.png">
+                <h1>DISCOVER DUPAX</h1>
+            </a>
+        </div>
+        <div class="header-links">
+            <div class="link-container">
+                <p>ABOUT DUPAX</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='aboutdupax.html'">DUPAX DEL NORTE</a>
+                    <a class="btn" onclick="location.href='dds.html'">DUPAX DEL SUR</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>WHERE TO GO</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='wheretogo.html'">NATURE AND ADVENTURE</a>
+                    <a class="btn" onclick="location.href='Foods.html'">FOOD AND HOSPITALITY</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>EVENTS AND CULTURES</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='eventnculture.html'">FESTIVAL</a>
+                    <a class="btn" onclick="location.href='Musics.html'">MUSIC</a>
+                    <a class="btn" onclick="location.href='Products.html'">PRODUCT</a>
+                </div>
+            </div>
+            <div class="link-container"  onclick="location.href='reminders.html'">
+                <p>REMINDERS</p>
+            </div>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="mobile-menu">
+                <a class="btn" onclick="location.href='aboutdupax.html'">ABOUT DUPAX</a>
+                <a class="btn" onclick="location.href='wheretogo.html'">WHERE TO GO</a>
+                <a class="btn" onclick="location.href='eventnculture.html'">EVENTS AND CULTURES</a>
+                <a class="btn" onclick="location.href='reminders.html'">REMINDERS</a>
+            </div>
+        </div>
+    </header>
+    <div class="places-container">
+        <div class="reminders-container" id="remImg1" style="background-image: url('styles/images/Reminders/rem1/1.png');">
+            <div class="reminder">
+                <a href="javascript:prevRem('rem1')"><img src="styles/images/Icons/prvsremndrbtn.png"></a>
+                <h2 id="rem1">LEAVE NO TRACE OTHER THAN FOOTPRINTS</h2>
+                <a href="javascript:nextRem('rem1')"><img src="styles/images/Icons/nxtrmndrbtn.png"></a>
+            </div>
+            <div class="reminder-dots">
+                <div class="dot dotrem1" onClick="javascript:showRem(0,'rem1')"></div>
+                <div class="dot dotrem1" onClick="javascript:showRem(1,'rem1')"></div>
+                <div class="dot dotrem1" onClick="javascript:showRem(2,'rem1')"></div>
+                <div class="dot dotrem1" onClick="javascript:showRem(3,'rem1')"></div>
+                <div class="dot dotrem1" onClick="javascript:showRem(4,'rem1')"></div>
+            </div>
+        </div>
+        <div class="reminders-container" id="remImg2" style="background-image: url('styles/images/Reminders/rem2/1.png');">
+            <div class="reminder">
+                <a href="javascript:prevRem('rem2')"><img src="styles/images/Icons/prvsremndrbtn.png"></a>
+                <h2 id="rem2">RESPECT THE CULTURE</h2>
+                <a href="javascript:nextRem('rem2')"><img src="styles/images/Icons/nxtrmndrbtn.png"></a>
+            </div>
+            <div class="reminder-dots">
+                <div class="dot dotrem2" onClick="javascript:showRem(0,'rem2')"></div>
+                <div class="dot dotrem2" onClick="javascript:showRem(1,'rem2')"></div>
+                <div class="dot dotrem2" onClick="javascript:showRem(2,'rem2')"></div>
+                <div class="dot dotrem2" onClick="javascript:showRem(3,'rem2')"></div>
+                <div class="dot dotrem2" onClick="javascript:showRem(4,'rem2')"></div>
+            </div>
+        </div>
+        <div class="reminders-container" id="remImg3" style="background-image: url('styles/images/Reminders/rem3/1.png');">
+            <div class="reminder">
+                <a href="javascript:prevRem('rem3')"><img src="styles/images/Icons/prvsremndrbtn.png"></a>
+                <h2 id="rem3">BRING YOUR COVID-19 VACCINATION CARD</h2>
+                <a href="javascript:nextRem('rem3')"><img src="styles/images/Icons/nxtrmndrbtn.png"></a>
+            </div>
+            <div class="reminder-dots">
+                <div class="dot dotrem3" onClick="javascript:showRem(0,'rem3')"></div>
+                <div class="dot dotrem3" onClick="javascript:showRem(1,'rem3')"></div>
+                <div class="dot dotrem3" onClick="javascript:showRem(2,'rem3')"></div>
+                <div class="dot dotrem3" onClick="javascript:showRem(3,'rem3')"></div>
+                <div class="dot dotrem3" onClick="javascript:showRem(4,'rem3')"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">TERMS AND PRIVACY POLICY</a>
+        </div>
+        <h4>© 2022 DISCOVER DUPAX. ALL RIGHTS RESERVED</h4>
+    </footer>
+
+    <script>
+        showRem(0 , 'rem1');
+        showRem(0 , 'rem2');
+        showRem(0 , 'rem3');
+    </script>
+</body>
+</html>

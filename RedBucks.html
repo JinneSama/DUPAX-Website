@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="javascript/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="styles/images/logo.png">
+                <h1>DISCOVER DUPAX</h1>
+            </a>
+        </div>
+        
+        <div class="header-links">
+            <div class="link-container">
+                <p>ABOUT DUPAX</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='aboutdupax.html'">DUPAX DEL NORTE</a>
+                    <a class="btn" onclick="location.href='dds.html'">DUPAX DEL SUR</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>WHERE TO GO</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='wheretogo.html'">NATURE AND ADVENTURE</a>
+                    <a class="btn" onclick="location.href='Foods.html'">FOOD AND HOSPITALITY</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>EVENTS AND CULTURES</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='eventnculture.html'">FESTIVAL</a>
+                    <a class="btn" onclick="location.href='Musics.html'">MUSIC</a>
+                    <a class="btn" onclick="location.href='Products.html'">PRODUCT</a>
+                </div>
+            </div>
+            <div class="link-container"  onclick="location.href='reminders.html'">
+                <p>REMINDERS</p>
+            </div>
+        </div>
+    </header>
+    <div class="places-container">
+        <div class="places">
+            <div class="places-links">
+                <h2>REDBUCK'S COFFEE SHAKES </h2>
+                <a href="https://www.facebook.com/redbucks.ineangan"><img src="styles/images/Icons/FB1.png"></a>
+                <a href="mailto:efraimjojo@gmail.com">
+                    <img src="styles/images/Icons/gmail.png"></a>  
+            </div>
+            <div class="main-image">
+                <img src="styles/images/Redbucks/Redbucks1.jpg" class="imgs">
+                <img src="styles/images/Redbucks/Redbucks2.jpg" class="imgs">
+                <img src="styles/images/Redbucks/Redbucks3.jpg" class="imgs">
+                <img src="styles/images/Redbucks/Redbucks4.jpg" class="imgs">
+                <img src="styles/images/Redbucks/Redbucks6.jpg" class="imgs">
+                <img src="styles/images/Redbucks/Redbucks7.jpg" class="imgs">
+                <img src="styles/images/Redbucks/Redbucks10.jpg" class="imgs">
+                <img src="styles/images/Redbucks/Redbucks11.jpg" class="imgs">
+            </div>
+            <h3 style="text-align: center;font-size: 0.8em; padding: 1em;">Do you have a craving for anything? Come experience Redbuck’s Coffee Shakes Ineangan's delicious snacks and refreshing food at affordable prices. 
+            </h3> 
+            <div class="image-option">
+                <a href="javascript:prevImages('slide')"><img src="styles/images/Icons/prvsremndrbtn.png"></a>
+                <div class="slide-images">
+                    <img src="styles/images/Redbucks/Redbucks1.jpg" class="slide" onClick="javascript:showImg(0 , 'imgs')">
+                    <img src="styles/images/Redbucks/Redbucks2.jpg" class="slide" onClick="javascript:showImg(1 , 'imgs')">
+                    <img src="styles/images/Redbucks/Redbucks3.jpg" class="slide" onClick="javascript:showImg(2 , 'imgs')">
+                    <img src="styles/images/Redbucks/Redbucks4.jpg" class="slide" onClick="javascript:showImg(3 , 'imgs')">
+                    <img src="styles/images/Redbucks/Redbucks6.jpg" class="slide" onClick="javascript:showImg(4 , 'imgs')">
+                    <img src="styles/images/Redbucks/Redbucks7.jpg" class="slide" onClick="javascript:showImg(5 , 'imgs')">
+                    <img src="styles/images/Redbucks/Redbucks10.jpg" class="slide" onClick="javascript:showImg(6 , 'imgs')">
+                    <img src="styles/images/Redbucks/Redbucks11.jpg" class="slide" onClick="javascript:showImg(7 , 'imgs')">
+                </div>
+                
+                <a href="javascript:nextImages('slide')"><img src="styles/images/Icons/nxtrmndrbtn.png"></a>
+            </div>
+            <div class="food-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d122476.66162592745!2d121.05253755445244!3d16.40471908284356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3390440fe0ec5919%3A0xa206716039d90d3d!2sNueva%20Vizcaya%20Provincial%20Capitol%2C%20Bayombong%2C%20Nueva%20Vizcaya!3m2!1d16.4879611!2d121.1597546!4m5!1s0x3390576032885edb%3A0x823e5109cb5d4eb8!2sIneangan%2C%20Nueva%20Vizcaya!3m2!1d16.321028!2d121.0822362!5e0!3m2!1sen!2sph!4v1648125961150!5m2!1sen!2sph" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">TERMS AND PRIVACY POLICY</a>
+        </div>
+        <h4>© 2022 DISCOVER DUPAX. ALL RIGHTS RESERVED</h4>
+    </footer>
+
+    <script>
+        showCurrentImages('slide');
+        showImg(0 , 'imgs');
+    </script>
+</body>
+</html>

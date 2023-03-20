@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="javascript/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="styles/images/logo.png">
+                <h1>DISCOVER DUPAX</h1>
+            </a>
+        </div>
+        
+        <div class="header-links">
+            <div class="link-container">
+                <p>ABOUT DUPAX</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='aboutdupax.html'">DUPAX DEL NORTE</a>
+                    <a class="btn" onclick="location.href='dds.html'">DUPAX DEL SUR</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>WHERE TO GO</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='wheretogo.html'">NATURE AND ADVENTURE</a>
+                    <a class="btn" onclick="location.href='Foods.html'">FOOD AND HOSPITALITY</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <p>EVENTS AND CULTURES</p>
+                <div class="header-dropdown">
+                    <a class="btn" onclick="location.href='eventnculture.html'">FESTIVAL</a>
+                    <a class="btn" onclick="location.href='Musics.html'">MUSIC</a>
+                    <a class="btn" onclick="location.href='Products.html'">PRODUCT</a>
+                </div>
+            </div>
+            <div class="link-container"  onclick="location.href='reminders.html'">
+                <p>REMINDERS</p>
+            </div>
+        </div>
+    </header>
+    <div class="places-container">
+        <div class="places">
+            <div class="places-links">
+                <h2>LADORES FARM AND RESORT</h2>
+                <a href="https://www.facebook.com/Ladores-Farm-107085911480772">
+                    <img src="styles/images/Icons/FB1.png"></a>
+                <h3>+63 927 705 3195</h3>
+            </div> 
+                <img src="styles/images/Ladores Farm/ladores farm5.jpg" class="imgs">
+                <img src="styles/images/Ladores Farm/ladores farm.jpg" class="imgs">
+                <img src="styles/images/Ladores Farm/ladores Farm 2.jpg" class="imgs">
+                <img src="styles/images/Ladores Farm/ladores farm3.jpg" class="imgs">
+                <img src="styles/images/Ladores Farm/ladores farm4.jpg" class="imgs">
+                <img src="styles/images/Ladores Farm/ladores farm6.jpg" class="imgs">
+                 <h3 style="text-align: center;font-size: 0.8em; padding: 1em;">So, what are you waiting? Ladores Farm and Resort cordially invites you to come visit. Purok 2, Dupax del Norte, Nueva Vizcaya. Come see how gorgeous the surroundings are and have an interesting and enjoyable tour of the farm and resort.</h3>
+            <div class="place" onClick="javascript:showImg(0 , 'imgs')" style="background-image: url('styles/images/Ladores Farm/ladores farm5.jpg')">
+            </div>
+             <div class="place" onClick="javascript:showImg(1 , 'imgs')" style="background-image: url('styles/images/Ladores Farm/ladores farm.jpg')">
+            </div>
+             <div class="place" onClick="javascript:showImg(2 , 'imgs')" style="background-image: url('styles/images/Ladores Farm/ladores Farm 2.jpg')">
+            </div>
+             <div class="place" onClick="javascript:showImg(3 , 'imgs')" style="background-image: url('styles/images/Ladores Farm/ladores farm3.jpg')">
+            </div>
+            <div class="place" onClick="javascript:showImg(4 , 'imgs')"style="background-image: url('styles/images/Ladores Farm/ladores farm4.jpg')">
+            </div>
+            <div class="place" onClick="javascript:showImg(5 , 'imgs')"style="background-image: url('styles/images/Ladores Farm/ladores farm6.jpg')">
+            </div>
+            <div class="stay-container">
+                <div class="stay-options">
+                    <a href="javascript:navToMap()">MAPS</a>
+                    <a href="javascript:navToStay()">WHERE TO STAY</a>
+                </div>
+                <div class="map-container">
+                    <div class = "map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d122476.66162592745!2d121.05253755445244!3d16.40471908284356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3390440fe0ec5919%3A0xa206716039d90d3d!2sNueva%20Vizcaya%20Provincial%20Capitol%2C%20Bayombong%2C%20Nueva%20Vizcaya!3m2!1d16.4879611!2d121.1597546!4m5!1s0x3390576032885edb%3A0x823e5109cb5d4eb8!2sIneangan%2C%20Nueva%20Vizcaya!3m2!1d16.321028!2d121.0822362!5e0!3m2!1sen!2sph!4v1648125629791!5m2!1sen!2sph" 
+                    width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="stay-place">
+                    <div class="place" onclick="location.href='casa.html';" style="background-image: url('styles/images/Casa Espanola/Casa1.jpg')">
+                        <div class="place-name">
+                            <img src="styles/images/Icons/location.png">
+                            <h3>CASA DE ESPANOLA</h3>
+                        </div>
+                    </div>
+
+                    <div class="place" onclick="location.href='Adducul.html';" style="background-image: url('styles/images/Adducul Hotel/Adducul2.jpg')">
+                        <div class="place-name">
+                            <img src="styles/images/Icons/location.png">
+                            <h3>ADDUCUL HOTEL</h3>
+                        </div>
+                    </div>
+                    <div class="place" onclick="location.href='LadoresHotel.html';" style="background-image: url('styles/images/Ladores Farm/Ladoreshotel.jpg')">
+                        <div class="place-name">
+                            <img src="styles/images/Icons/location.png">
+                            <h3>LADORES FARM AND RESORT</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">TERMS AND PRIVACY POLICY</a>
+        </div>
+        <h4>© 2022 DISCOVER DUPAX. ALL RIGHTS RESERVED</h4>
+    </footer>
+    <script>
+    showImg(0 , 'imgs');
+    </script>
+</body>
+</html>
